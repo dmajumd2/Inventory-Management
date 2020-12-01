@@ -1,0 +1,10 @@
+<div class="container">
+    <mat-form-field class="example-full-width searchForm">
+        <input type="number" matInput placeholder="Search Id" [(ngModel)]='searchValue' [name]='searchValue'>
+    </mat-form-field>
+    <br>
+    <button type="button" (click)="onSearch()" class="btn btn-primary searchForm">Search</button>
+    <div class="container">
+        <app-data-table [searchValue]='valuetoSend'></app-data-table>
+    </div>
+</div>
